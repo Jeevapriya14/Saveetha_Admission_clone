@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    
+  background: url('saveetha-background.png');
+  background-size: contain;
+   background-repeat: no-repeat;
+   background-color: black;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+  flex-wrap: wrap;
+}
+
+
+.promo {
+  flex: 1;
+  
+  color: white;
+  padding: 50px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-shadow: 1px 1px 3px black;
+}
+
+.logo {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+.promo  {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  
+  display: flex;
+  
+}
+
+
+.promo p {
+  font-size: 1.2rem;
+  max-width: 400px;
+}
+
+
+.form-section {
+    margin-top: 10px;
+  margin-right: 50px;
+  background-color:black;
+  padding: 50px 30px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: right;
+}
+
+.enquiry-form {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+ 
+}
+
+.enquiry-form h2 {
+  margin-bottom: 20px;
+  color: white;
+}
+
+.enquiry-form label {
+  margin-top: 12px;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.enquiry-form input,
+.enquiry-form select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.checkbox-label {
+  margin-top: 15px;
+  font-size: 0.95rem;
+}
+
+.enquiry-form button {
+  margin-top: 20px;
+  padding: 12px;
+  background-color: orange;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.enquiry-form button:hover {
+  background-color: #0055aa;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .promo,
+  .form-section {
+    flex: 1 1 100%;
+    padding: 30px 20px;
+  }
+
+  .promo h1 {
+    font-size: 2rem;
+  }
+}
